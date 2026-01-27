@@ -8,13 +8,14 @@
   </head>
 
   <body>
+    <!-- Header -->
     <header
       class="sticky top-0 bg-white/80 backdrop-blur border-b border-slate-200 p-4 flex items-center justify-between max-w-6xl mx-auto"
     >
       <img src="./assets/logo.svg" alt="logo" class="w-8" />
       <nav class="flex gap-4 items-center">
         <a
-          href="/"
+          href="#home"
           class="text-slate-600 hover:text-blue-600 text-sm md:text-lg"
           >Home</a
         >
@@ -24,9 +25,9 @@
           >About</a
         >
         <a
-          href="#Services"
+          href="#services"
           class="text-slate-600 hover:text-blue-600 text-sm md:text-lg"
-          >#Services</a
+          >Services</a
         >
         <a
           href="#contact"
@@ -40,6 +41,39 @@
         </button>
       </nav>
     </header>
-    <main></main>
+    <!-- Main -->
+    <main>
+      <!-- Hero Section -->
+      <section
+        id="home"
+        class="max-w-6xl mx-auto px-4 py-16 grid gap-10 md:grid-cols-2 items-center"
+      >
+        <div>
+          <h1 class="text-3xl md:text-4xl font-bold mb-4">
+            Welcome to ITMD542
+          </h1>
+          <p class="text-slate-600 mb-6">
+            This is a responsive homepage built using Tailwind CSS for Lab 1.
+            The page demonstrates semantic HTML, modern layout techniques, and
+            mobile-first design principles.
+          </p>
+          <a href="#services">
+            <button
+              class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+            >
+              Get Started
+            </button>
+          </a>
+        </div>
+        <div class="bg-white shadow-lg rounded-xl p-6">
+          <h2 class="font-semibold text-lg mb-2">Lab Highlights</h2>
+          <ul class="space-y-2 text-slate-600">
+            <li>✔ Tailwind CSS styling</li>
+            <li>✔ Responsive layout</li>
+            <li>✔ Accessible HTML</li>
+          </ul>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
